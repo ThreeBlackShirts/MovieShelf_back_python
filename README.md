@@ -1,13 +1,23 @@
-파이썬 가상환경 오류 날 시 
-https://velog.io/@hyereen/flask-%EB%B0%B1%EC%97%94%EB%93%9C%EB%A1%9C-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0-1-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-gpvtur22
+#	[BackEnd_python]MovieShelf
 
-oracle cloud 연결
-https://velog.io/@hmjang28/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B3%BC-Oracle-Cloud-DB-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0
+## :point_right: Info
+MovieShelf의 영화 목록 중 랜덤한 한 영화와 비슷한 장르의 영화 목록을 리턴하는 추천 시스템입니다.
 
-import 오류
-> pip install Flask
-> pip install -U scikit-learn
-> pip install cx_oracle
-> pip install numpy
-> pip install pandas
-> pip install requests
+<br>
+
+## :pushpin: Feature
+- 추천 시스템 - 콘텐츠 기반 필터링
+
+<br>
+
+## :hammer_and_wrench: Tech Stack
+<div>
+<img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/flask-000000?style=flat-square&logo=flask&logoColor=white" />
+</div>
+
+<br>
+
+## :desktop_computer: Preview
+영화 '민스민트 작전'과 유사한 장르의 영화 목록이 추천된 실제 서비스 화면
+![MovieRecommendationSys](https://user-images.githubusercontent.com/82142527/204090232-839d2344-0c73-4994-9bc0-1e92562eba67.gif)
