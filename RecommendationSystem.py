@@ -2,10 +2,10 @@ from email.quoprimime import unquote
 from urllib.parse import unquote_plus
 import cx_Oracle
 
-cx_Oracle.init_oracle_client(lib_dir=r"C:\Users\winny\Documents\OracleCloud\instantclient_21_3") 
+cx_Oracle.init_oracle_client(lib_dir=r"Instant Client 경로") 
 # 본인이 Instant Client 넣어놓은 경로를 입력해준다
 
-connection = cx_Oracle.connect(user='admin', password='AUDwl21715185!', dsn='movieshelf_high')
+connection = cx_Oracle.connect(user='DB 사용자이름', password='비밀번호', dsn='dsn')
 # 본인이 접속할 오라클 클라우드 DB 사용자이름, 비밀번호, dsn을 넣어준다.
 
 from flask import Flask, request
@@ -28,7 +28,7 @@ class Movie(Resource):
 
         cursor = connection.cursor()
 
-        movies = "SELECT movie_title, movie_poster, movie_genres FROM movies ORDER BY movie_rank"
+        movies = "SELECT movie_title, movie_poster, movie_genres FROM movies ORDER BY movie_rate"
         cursor.execute(movies)
         all_movies = cursor.fetchall()
         movies = pd.DataFrame(all_movies, columns=['movie_title', 'movie_poster', 'movie_genres']) 
